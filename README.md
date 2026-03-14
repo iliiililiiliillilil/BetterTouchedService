@@ -43,10 +43,6 @@ BetterTouchedService.playerTouched(part, function()
     print("A player is near the part!");
 end)
 ```
-
-* Triggers **every 0.1 seconds** while a player is within 4 studs of the part.
-* Great for: safe zones, aura effects, ongoing proximity detection.
-
 ---
 
 ### 3️⃣ Detect One-Time Proximity
@@ -58,9 +54,6 @@ BetterTouchedService.playerTouchedOnce(part, function()
     print("A player touched the part for the first time!")
 end)
 ```
-
-* Triggers **only the first time** a player gets within 4 studs.
-* Perfect for: pickups, doors, triggers, buttons, or one-time events.
 
 ---
 
