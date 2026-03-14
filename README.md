@@ -28,8 +28,8 @@ Perfect! Let’s make your **GitHub README-style description** and usage guide f
 Place `BetterTouchedService` in `ReplicatedStorage` (or another suitable location).
 
 ```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local BetterTouchedService = require(ReplicatedStorage.BetterTouchedService)
+local ReplicatedStorage = game:GetService("ReplicatedStorage");
+local BetterTouchedService = require(ReplicatedStorage.BetterTouchedService);
 ```
 
 ---
@@ -37,10 +37,10 @@ local BetterTouchedService = require(ReplicatedStorage.BetterTouchedService)
 ### 2️⃣ Detect Continuous Proximity
 
 ```lua
-local part = workspace.Part
+local part = workspace.Part;
 
 BetterTouchedService.playerTouched(part, function()
-    print("A player is near the part!")
+    print("A player is near the part!");
 end)
 ```
 
