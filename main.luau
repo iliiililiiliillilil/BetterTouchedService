@@ -2,7 +2,7 @@ local Players = game:GetService("Players");
 
 local BetterTouchedService = {};
 
-function BetterTouchedService:playerTouched(obj: BasePart, callback)
+function BetterTouchedService.playerTouched(obj: BasePart, callback)
 	while true do
 		task.wait(0.1);
 		for _, player in Players:GetPlayers() do
@@ -19,7 +19,7 @@ function BetterTouchedService:playerTouched(obj: BasePart, callback)
 end
 
 
-function BetterTouchedService:playerTouchedOnce(obj: BasePart, callback)
+function BetterTouchedService.playerTouchedOnce(obj: BasePart, callback)
 	local IsCompleted = false;
 	
 	while true do
