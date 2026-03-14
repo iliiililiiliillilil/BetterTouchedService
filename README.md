@@ -57,14 +57,6 @@ end)
 
 ---
 
-### 4️⃣ Notes
-
-* The **distance threshold** is currently **4 studs**, but you can modify the module if you want a different radius.
-* Only works with **players** — for objects vs objects, you could expand it into a multi-part proximity system.
-* Each detection runs in a **loop asynchronously**, so it won’t block other scripts.
-
----
-
 ### ✅ Why Use This Module?
 
 * Avoids the unreliable `.Touched` event.
@@ -73,7 +65,3 @@ end)
 * Clean, simple API — minimal setup required.
 
 ---
-
-If you want, I can **also write the README in perfect GitHub Markdown with badges, examples, and installation instructions**, ready to paste straight into your repository.
-
-Do you want me to do that?
