@@ -11,7 +11,7 @@ function BetterTouchedService.playerTouched(obj: BasePart, callback)
 
 			local distance = (obj.Position - characterHumanoidRootPart.Position).Magnitude;
 
-			if distance <= 4 then
+			if distance <= obj.Size.X then
 				callback();
 			end
 		end
@@ -30,7 +30,7 @@ function BetterTouchedService.playerTouchedOnce(obj: BasePart, callback)
 
 			local distance = (obj.Position - characterHumanoidRootPart.Position).Magnitude;
 
-			if distance <= 4 then
+			if distance <= obj.Size.X then
 				callback();
 				IsCompleted = true;
 			end
