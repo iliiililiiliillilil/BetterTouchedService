@@ -1,7 +1,3 @@
-Perfect! Let’s make your **GitHub README-style description** and usage guide for your **BetterTouchedService** module. I’ll make it **clear, professional, and beginner-friendly**.
-
----
-
 # 📦 BetterTouchedService
 
 **BetterTouchedService** is a Roblox Lua module that replaces the default `.Touched` event with a **reliable, math-based proximity detection system**. It works for both **players and parts**, supports **continuous detection** and **one-time triggers**, and avoids physics-related bugs.
