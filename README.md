@@ -44,10 +44,10 @@ end)
 ### 3️⃣ Detect One-Time Proximity
 
 ```lua
-local part = workspace.Part
+local part = workspace.Part;
 
 BetterTouchedService.playerTouchedOnce(part, function()
-    print("A player touched the part for the first time!")
+    print("A player touched the part for the first time!");
 end)
 ```
 
