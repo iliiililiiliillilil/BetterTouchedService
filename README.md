@@ -35,8 +35,8 @@ local BetterTouchedService = require(ReplicatedStorage.BetterTouchedService);
 ```lua
 local part = workspace.Part;
 
-BetterTouchedService.playerTouched(part, function()
-    print("A player is near the part!");
+BetterTouchedService.playerTouched(part, function(player, part)
+    print(`{player.Name}, has touched {part.Name}!`);
 end)
 ```
 ---
@@ -46,8 +46,8 @@ end)
 ```lua
 local part = workspace.Part;
 
-BetterTouchedService.playerTouchedOnce(part, function()
-    print("A player touched the part for the first time!");
+BetterTouchedService.playerTouchedOnce(part, function(player, part)
+    print(`{player.Name}, has touched {part.Name}!`);
 end)
 ```
 
