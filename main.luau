@@ -8,11 +8,12 @@ function BetterTouchedService.playerTouched(obj: BasePart, callback)
 		for _, player in Players:GetPlayers() do
 			local character = player.Character or player.CharacterAdded:Wait();
 			local characterHumanoidRootPart = character:FindFirstChild("HumanoidRootPart");
+			
+			local closestPoint = obj:GetClosestPointOnSurface(characterHumanoidRootPart.Position);
+			local distance = (closestPoint - characterHumanoidRootPart.Position).Magnitude;
 
-			local distance = (obj.Position - characterHumanoidRootPart.Position).Magnitude;
-
-			if distance <= obj.Size.X then
-				callback();
+			if distance <= 4  then
+				callback(player, obj);
 			end
 		end
 	end
@@ -27,11 +28,12 @@ function BetterTouchedService.playerTouchedOnce(obj: BasePart, callback)
 		for _, player in Players:GetPlayers() do
 			local character = player.Character or player.CharacterAdded:Wait();
 			local characterHumanoidRootPart = character:FindFirstChild("HumanoidRootPart");
+			
+			local closestPoint = obj:GetClosestPointOnSurface(characterHumanoidRootPart.Position);
+			local distance = (closestPoint - characterHumanoidRootPart.Position).Magnitude;
 
-			local distance = (obj.Position - characterHumanoidRootPart.Position).Magnitude;
-
-			if distance <= obj.Size.X then
-				callback();
+			if distance <= 4 then
+				callback(player, obj);
 				IsCompleted = true;
 			end
 		end
